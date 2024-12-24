@@ -9,7 +9,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline -B
 
 # Copy the entire project to the container
-COPY . .
+COPY pdf-compress .
 
 # Build the Spring Boot application (skip tests for faster build)
 RUN mvn package -DskipTests
