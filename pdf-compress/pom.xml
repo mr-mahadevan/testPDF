@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.Abc</groupId>
 	<artifactId>pdf-compress</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>pdf-compress</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
