@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Abc</groupId>
-	<artifactId>pdf-compress</artifactId>
+	<artifactId>app</artifactId>
 	<version>1</version>
-	<name>pdf-compress</name>
+	<name>app</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
