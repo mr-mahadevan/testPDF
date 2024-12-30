@@ -10,7 +10,7 @@ RUN mvn dependency:go-offline -B
 COPY . .
 
 # Build the Spring Boot application (skip tests for faster build)
-RUN mvn build package -DskipTests
+RUN mvn clean install package -DskipTests
 
 # Stage 2: Run
 FROM openjdk:17-jdk-slim
