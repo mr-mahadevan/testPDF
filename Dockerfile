@@ -10,14 +10,14 @@ RUN mvn dependency:go-offline -B
 COPY . .
 
 # Build the Spring Boot application (skip tests for faster build)
-RUN mvn package -DskipTests
+RUN mvn build package -DskipTests
 
 # Stage 2: Run
 FROM openjdk:17-jdk-slim
 
 
 # Copy the built JAR from the build stage
-COPY --from=build /target/pdf-compress*.jar .
+COPY --from=build /target/app-1.jar .
 
 # Expose application port
 EXPOSE 8080
