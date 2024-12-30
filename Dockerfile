@@ -5,7 +5,7 @@ FROM maven:3.8.5-openjdk-17 AS build
 WORKDIR /pdf-compress
 
 # Copy the pom.xml file and download project dependencies
-COPY pom.xml .
+COPY pdf-compress/pom.xml .
 RUN mvn dependency:go-offline -B
 
 # Copy the entire project to the container
