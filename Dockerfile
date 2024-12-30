@@ -17,7 +17,7 @@ FROM openjdk:17-jdk-slim
 
 
 # Copy the built JAR from the build stage
-COPY --from=build /target/pdf-compress*.jar app.jar
+COPY --from=build /target/pdf-compress*.jar .
 
 # Expose application port
 EXPOSE 8080
